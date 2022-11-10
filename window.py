@@ -1,11 +1,11 @@
 from tkinter import Tk, BOTH, Canvas
 
 class Window:
-    def __init__(self, width, height) -> None:
+    def __init__(self, width: float , height: float) -> None:
         """Initialize the window
         Args:
-            - width (int): width of the window
-            - height (int): size of the window
+            - width (float): width of the window
+            - height (float): size of the window
         """
         # Creating a new window.
         self._root = Tk()

@@ -5,7 +5,7 @@ from Line import Line
 def main():
     win = Window(800, 600)
     p1 = Point
-    l = Line(Point(50, 50), Point(400, 400))
+    l = Line(Point(123, 50), Point(400, 400))
     win.draw_line(l, 'black')
     win.wait_for_close()
     
