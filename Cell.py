@@ -92,8 +92,8 @@ class Cell:
     def draw_move(self, other: Cell, undo=False) -> None:
         if self._win is None:
             return
-        x_mid = (self._x1 + self._x2) / 2
-        y_mid = (self._y1 + self._y2) / 2
+        x_mid = (self._x1 + other._x2) / 2
+        y_mid = (self._y1 + other._y2) / 2
         to_x_mid = (other._x1 + other._x2) / 2
         to_y_mid = (other._y1 + other._y2) / 2
         fill_color = "gray" if undo else "red"
