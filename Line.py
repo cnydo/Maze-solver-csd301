@@ -1,11 +1,12 @@
-from tkinter import BOTH
+from tkinter import BOTH, Canvas
+from Point import Point
 
 class Line:
-    def __init__(self, point1, point2) -> None:
+    def __init__(self, point1: Point, point2: Point) -> None:
         self.point1 = point1
         self.point2 = point2
     
-    def draw(self, canvas, fill_color="black"):
+    def draw(self, canvas: Canvas, fill_color="black"):
         """It creates a line on the canvas, using the coordinates of the two points, and the fill color
         
         Args:
