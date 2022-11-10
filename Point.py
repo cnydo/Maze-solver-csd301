@@ -31,3 +31,22 @@ class Point:
         """
         self.__x = x
         
+    @property
+    def y(self) -> float:
+        """
+        This function returns the y attribute of the object
+        
+        Returns:
+            - float: The y attribute of the object
+        """
+        return self.__y
+    
+    @y.setter
+    def y(self, y: float) -> None:
+        """
+        This function sets the y attribute of the object to the value of the argument
+        
+        Args:
+            - y (float): The new value of the y attribute
+        """
+        self.__y = y
