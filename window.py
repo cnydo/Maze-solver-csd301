@@ -4,8 +4,8 @@ class Window:
     def __init__(self, width, height) -> None:
         """Initialize the window
         Args:
-            width (int): width of the window
-            height (int): size of the window
+            - width (int): width of the window
+            - height (int): size of the window
         """
         # Creating a new window.
         self._root = Tk()
@@ -25,8 +25,20 @@ class Window:
         self._running = False
         
     def redraw(self):
+        """
+        It forces the window to redraw itself
+        """
         self._root.update_idletasks()
         self._root.update()
+        
+    def draw_line(self, line, fill_color="black"):
+        """
+        It draws a line on the canvas.
+        Args:
+            - line (Line): A Line object
+            - fill_color (str, optional): The color of the line, defaults to black (optional)
+        """
+        line.draw(self._canvas, fill_color)
         
     def wait_for_close(self):
         self._running = True
