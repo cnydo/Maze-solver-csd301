@@ -14,7 +14,7 @@ class Line:
     def point1(self, point1: Point) -> None:
         self.__point1 = point1
         
-    @property
+    @property     
     def point2(self) -> Point: 
         return self.__point2
     
