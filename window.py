@@ -3,7 +3,6 @@ from tkinter import Tk, BOTH, Canvas
 class Window:
     def __init__(self, width, height) -> None:
         """Initialize the window
-
         Args:
             width (int): width of the window
             height (int): size of the window
@@ -33,7 +32,7 @@ class Window:
         self._running = True
         while self._running:
             self.redraw()
-        print("window closed")
+        print("window closed...")
         
     def close(self):
         self._running = False

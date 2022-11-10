@@ -1,4 +1,4 @@
-from window import Window
+from Window import Window
 
 
 def main():
