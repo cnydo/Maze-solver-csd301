@@ -1,7 +1,7 @@
+from __future__ import annotations
 from Line import Line
 from Point import Point
 from Window import Window
-from __future__ import annotations
 class Cell:
     def __init__(self, win: Window) -> None:
         self.has_left_wall = True
